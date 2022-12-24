@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+}
+
+#wrap {
+    width: 90%;
+    height: 90%;
+}
+
+header {
+    background-image: url("krople1.jpg");
+    height: 10%;
+    font-size: 40px;
+    letter-spacing: 5px;
+    border: 4px groove #3366CC;
+}
+
+#lewy {
+    background-color: #006699;
+}
+
+#prawy {
+    background-color: #CCCCFF;
+}
+
+#lewy-form {
+    height: 310px;
+    background-color: #99CCFF;
+}
+
+#lewy-wynik {
+    margin: 5px auto auto;
+    padding: auto;
+    height: 60px;
+    background-color: white;
+}
+
+h2 {
+    color: #990000;
+}
+
+button {
+    background-color: #3399FF;
+    height: 45px;
+}
+
+#lewy,
+#prawy {
+    float: left;
+    height: 440px;
+    width: 50%;
+}
+
+h2,
+#lewy-wynik,
+#prawy,
+header {
+    text-align: center;
+}
+
+button,
+#lewy-wynik {
+    font-weight: bold;
+}
+
+#wrap,
+#lewy-form {
+    margin: auto;
+    padding: auto;
+}
+
+#lewy-form,
+#lewy-wynik {
+    width: 280px;
+}
+
+button,
+#lewy-wynik,
+#lewy-form {
+    border-radius: 10px;
+}
+
+#table,
+button {
+    width: 100%;
+}

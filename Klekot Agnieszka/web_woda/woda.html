@@ -1,0 +1,85 @@
+<html lang="pl">
+
+<head>
+    <title>Hurtownia wody źródlanej</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            Źródlana woda uśmiechu doda!!!
+        </header>
+        <section id="lewy">
+            <div id="lewy-form">
+                <h2>Oferta handlowa</h2>
+                <table>
+                    <tr>
+                        <td>Woda "Żywiec"</td>
+                        <td>1.50zł/1.51</td>
+                    </tr>
+                    <tr>
+                        <td>Woda "Muszynianka"</td>
+                        <td>1.70zł/1.51</td>
+                    </tr>
+                    <tr>
+                        <td>Woda "Cisowianka"</td>
+                        <td>1.55zł/1.51</td>
+                    </tr>
+                </table>
+
+                <h2>Formularz zakupów</h2>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="rodzaj">Rodzaj wody:</label>
+                            </td>
+                            <td>
+                                <select name="rodzaj" id="form_rodzaj">
+									<option>Żywiec</option>
+									<option>Muszynianka</option>
+									<option>Cisowianka</option>
+								</select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="ilosc">Ilość butelek:</label>
+                            </td>
+                            <td>
+                                <input name="ilosc" id="form_ilosc" type="number" value="3" /><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+                                <button type="button" onclick="oblicz()">Koszt zamówienia</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div id="lewy-wynik">
+                Kosz zakupu wynosi:<br><span id="oblicz-wynik">4.65</span> zł
+                <script type="text/javascript">
+                    var ceny = [1.5, 1.7, 1.55];
+
+                    function oblicz() {
+                        let rodzaj = document.getElementById("form_rodzaj").selectedIndex;
+                        let ilosc = document.getElementById("form_ilosc").value;
+                        document.getElementById("oblicz-wynik").innerHTML = ceny[rodzaj] * ilosc;
+                    }
+                </script>
+            </div>
+        </section>
+        <section id="prawy">
+            <img src="woda_serce.png" />
+        </section>
+    </div>
+</body>
+
+</html>

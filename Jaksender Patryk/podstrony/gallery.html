@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Joywave</title>
+  <meta charset="utf-8"/>
+  <style>
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .photo {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      background-size: cover;
+      transition: 0.3s;
+    }
+    .photo:hover {
+      opacity: 0.7;
+    }
+    #photo1 {
+      background-image: url('https://d.newsweek.com/en/full/1919951/joywave.jpg?w=1600&h=1600&q=88&f=7388dabf48e5b7db671798aa367898b7');
+    }
+    #photo2 {
+      background-image: url('https://i0.wp.com/images.303magazine.com/uploads/2016/06/JW1.jpg?resize=960%2C931&ssl=1');
+    }
+    #photo3 {
+      background-image: url('https://www.nme.com/wp-content/uploads/2021/11/Daniel-Armbruster-of-Joywave.-Credit-Emma-McIntyreGetty-Images-for-Coachella.jpg');
+    }
+    #photo4 {
+      background-image: url('https://www.studlife.com/files/2017/11/ENTER_MUS-COACHELLA_7_LA.jpg');
+    }
+    #photo5 {
+      background-image: url('https://1883magazine.com/wp-content/uploads/2020/03/Joywave_Shot07_125_v01-scaled.jpg');
+    }
+  </style>
+  <link rel="stylesheet" href="generic.css" type="text/css"/>
+</head>
+<body>
+  <video autoplay muted loop class="background">
+    <source src="img/gallerybg.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>Gallery for Joywave</h1>
+    <div class="photos">
+      <div id="photo1" class="photo"></div>
+      <div id="photo2" class="photo"></div>
+      <div id="photo3" class="photo"></div>
+      <div id="photo4" class="photo"></div>
+      <div id="photo5" class="photo"></div>
+    </div>
+    <p class="bar">
+      <a href="https://open.spotify.com/artist/1UfzhwcOR4yfX7yHTPfC9m">Listen to their music</a>
+      <a href="index.html">Main</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="concerts.html">Concerts</a>
+      <a href="history.html">History</a>
+    </p>
+  </div>
+</body>
+</html>

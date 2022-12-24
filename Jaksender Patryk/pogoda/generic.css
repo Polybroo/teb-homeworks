@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+html{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2vh;
+}
+body {
+    background: url("./img/background.jpg");
+    background-size: cover;                      /* <------ */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: black;
+}
+#welcome{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#welcome-logo{
+    width: 75vh;
+    height: 21.75vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    background: no-repeat center/100% url("./img/logo.svg");
+}
+
+#weathercards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5vh;
+}
+.weathercard{
+    width: 32vh;
+    aspect-ratio: 4 / 5; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 1vh rgba(0, 0, 0, 0.6);
+}
+.weathercard-bubble, .weathercard-fields-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10%;
+}
+.weathercard-bubble{
+    height: 35%;
+    text-align: right;
+    box-shadow: inset 0vh 0vh 7.5vh rgba(0, 0, 0, 0.15);
+}
+.weathercard-label, .weathercard-temperature, .weathercard-name{
+    color: rgb(109, 109, 109);
+    mix-blend-mode: multiply;
+}
+.weathercard-fields-box{
+    height: 33%;
+}
+.weathercard-label{
+    font-size: 2.3vh;
+}
+.weathercard-temperature{
+    font-size: 6.5vh;
+    font-weight: 700;
+}
+.weathercard-name{
+    font-size: 2vh;
+}
+.weathercard-field{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.weathercard-field-key{
+    color: #999999;
+}
+.weathercard-field-value{
+    color: #707070;
+    font-weight: 700;
+}
+
+body, .weathercard-label, .weathercard-temperature, .weathercard-name, .weathercard-field-key, .weathercard-field-value {
+    margin: 0;
+    padding: 0;
+}
